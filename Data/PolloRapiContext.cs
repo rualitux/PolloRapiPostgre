@@ -27,7 +27,8 @@ namespace PolloRapiApi.Data
 
         #region Required
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-          //=> optionsBuilder.UseNpgsql("Server=localhost;Database=pollorapidb;Port=5432;User Id= postgres; Password = alonsoxz1");
+          //=> optionsBuilder.UseNpgsql("Server=localhost;Database=pollorapidb;
+          //=5432;User Id= postgres; Password = alonsoxz1");
           => optionsBuilder.UseNpgsql("Server =ec2-3-208-79-113.compute-1.amazonaws.com; Database=d3b3n7mj1v60c8;Port=5432;User Id = zdcjdvhvkuqcgu; Password = 6e449cc9b156e5cb4fbf22e335338dd629764803d22c3905d6e7acbba287202e");
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
